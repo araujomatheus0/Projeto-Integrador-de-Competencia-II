@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('/cafeteria_araujo/imagens/loginsfundo.jpg') no-repeat center center; /* Ajusta a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Leve transparência para o fundo do container */
+    padding: 20px;
+    border-radius: 10px; /* Bordas mais arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    width: 300px;
+    max-width: 90%; /* Para responsividade em telas menores */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%; /* Garante que os inputs ocupem toda a largura do container */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+input[type="submit"] {
+    background-color: #462b10;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adiciona uma transição suave */
+}
+
+input[type="submit"]:hover {
+    background-color: #905f35;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cadastrar-link {
+    text-decoration: none;
+    color: #462b10;
+}
+
+.cadastrar-link:hover {
+    text-decoration: underline;
+}

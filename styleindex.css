@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+    background-color: #462b10;
+    color: #ffffff;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s; 
+    padding: 5px; 
+    border-radius: 5px; 
+}
+
+nav ul li a:hover {
+    color: #ffcc00; 
+}
+
+.sobre-cafeteria {
+    margin: 20px 0; /* Espaço em cima e embaixo da seção */
+    color: #fff; /* Cor do texto */
+}
+
+.sobre-cafeteria-conteudo {
+    display: flex; /* Usando flexbox para alinhar imagem e texto */
+    align-items: flex-start; /* Alinha a imagem e o texto no topo */
+}
+
+.sobre-cafeteria img.imagem-sobre-cafeteria {
+    max-width: 10%; /* Tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas para a imagem */
+    margin-right: 10px; /* Espaço à direita da imagem */
+}
+
+.textocafeteria {
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas para melhor legibilidade */
+    margin: 0; /* Remove margens do parágrafo */
+}
+
+/* Estilo adicional para o cabeçalho */
+.bemvindo {
+    text-align: center; /* Centraliza o título */
+    color: #f8f9fa; /* Cor do texto do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .sobre-cafeteria-conteudo {
+        flex-direction: column; /* Muda a direção para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .sobre-cafeteria img.imagem-sobre-cafeteria {
+        max-width: 80%; /* Ajusta o tamanho da imagem em telas menores */
+        margin: 0 0 10px 0; /* Remove margens laterais e adiciona espaço abaixo */
+    }
+}
+h3.textoitens {
+    color: #000000; 
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.descitens {
+    color: #000000; 
+    font-size: 14px;
+}
+
+.precoitens {
+    color: #000000; 
+    font-size: 16px; 
+    margin-top: 5px; 
+}
+
+.cardapio {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin: 20px 0;
+}
+
+.cardapio-item {
+    background-color: #fff; 
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    padding: 8px; 
+    margin: 10px;
+    flex: 1 1 calc(25% - 20px); 
+    max-width: calc(25% - 20px); 
+    text-align: center; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.cardapio-item img {
+    width: 100%; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+.cardapio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.carousel-item img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center; 
+    padding: 10px; 
+    background-color: #333; 
+    color: white; 
+}
+
+.titulo-cardapio {
+    font-family: Montserrat, sans-serif; 
+    text-align: center; 
+    margin: 20px 0; 
+    color: #ffffff; 
+}
+
+.carousel-item img {
+    width: 90%; 
+    height: 400px; 
+    object-fit: cover; 
+    margin: 0 auto; 
+}
+
+.carrinho {
+    position: fixed; 
+    top: 20px; 
+    right: 20px;
+    width: 300px; 
+    background-color: white; 
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    padding: 15px; 
+    display: none; 
+}
+
+.carrinho h4 {
+    margin: 0 0 10px; /* Margem abaixo do título do carrinho */
+}
+
+.carrinho-item {
+    margin-bottom: 10px; /* Margem abaixo de cada item do carrinho */
+} 
+
+/* Estilo para o botão "Adicionar ao Carrinho" */
+.adicionar-carrinho {
+    background-color: #462b10 !important; /* Cor de fundo desejada */
+    color: white !important; /* Cor do texto */
+    border: none !important; /* Remove a borda padrão */
+}
+
+.adicionar-carrinho:hover {
+    background-color: #462b10 !important; /* Cor de fundo ao passar o mouse */
+}
+
+nav ul li form {
+    display: flex; /* Alinha o nome do usuário e o botão em linha */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+nav ul li form span {
+    margin-right: 10px; /* Espaçamento entre o nome do usuário e o botão de sair */
+}

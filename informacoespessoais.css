@@ -1,0 +1,94 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    color: #333; /* Cor do texto padrão */
+    line-height: 1.6; /* Aumenta a legibilidade */
+}
+
+header {
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto no cabeçalho */
+    text-align: center; /* Centraliza o texto do cabeçalho */
+    padding: 10px;
+}
+
+nav {
+    display: flex; /* Utiliza flexbox para o menu */
+    justify-content: center; /* Centraliza os itens do menu */
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+}
+
+nav li {
+    display: inline; /* Exibe os itens da lista em linha */
+}
+
+nav a {
+    color: white; /* Cor do texto dos links do menu */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    padding: 5px 15px; /* Padding para os links */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+nav a:hover {
+    background-color: #575757; /* Cor de fundo ao passar o mouse */
+}
+
+main {
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: 20px auto; /* Centraliza o conteúdo */
+    padding: 20px; /* Padding interno do main */
+    background-color: white; /* Cor de fundo branca para o conteúdo */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+}
+
+h1 {
+    text-align: center; /* Centraliza o título */
+    color: #462b10; /* Cor do título */
+    margin-bottom: 20px; /* Margem abaixo do título */
+}
+
+.informacoes-pessoais {
+    margin: 20px 0; /* Margem superior e inferior para a seção de informações pessoais */
+    padding: 10px; /* Padding interno */
+    border: 1px solid #ddd; /* Borda leve ao redor da seção */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #f9f9f9; /* Cor de fundo suave para a seção */
+}
+
+.informacoes-pessoais p {
+    margin: 10px 0; /* Margem acima e abaixo dos parágrafos */
+}
+
+a {
+    display: inline-block; /* Torna o link um bloco para padding */
+    margin-top: 20px; /* Margem acima do link */
+    padding: 10px 15px; /* Padding interno do link */
+    background-color: #462b10; /* Cor de fundo do link */
+    color: white; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+a:hover {
+    background-color: #5c3e1e; /* Cor de fundo ao passar o mouse */
+}
+
+footer {
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 10px; /* Padding para o rodapé */
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto no rodapé */
+    margin-top: 20px; /* Margem acima do rodapé */
+}

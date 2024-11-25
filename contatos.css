@@ -1,0 +1,54 @@
+body {
+        font-family: Arial, sans-serif;
+        margin: 0 auto; /* Centraliza o body na página */
+        padding: 0; /* Remove o padding padrão do body */
+        width: 90%; /* Define a largura do body em 90% */
+        background-color: #462b10;
+}
+.container{
+        background-color: #d9d9d9;
+  }
+
+.titulocarrinho{
+        text-align: center;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+.textototal{
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Centraliza os itens do menu */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s; /* Transição suave para a cor do link */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Cor ao passar o mouse */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.observacao{
+    font-size: 20px;    
+}

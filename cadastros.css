@@ -1,0 +1,132 @@
+/* Estilo para o body */
+body {
+    font-family: Arial, sans-serif;
+    background: url('/cafeteria_araujo/imagens/loginsfundo.jpg') no-repeat center center; /* Ajusta a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilo para o container */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Leve transparência para o fundo da caixa */
+    padding: 20px;
+    border-radius: 10px; /* Bordas mais arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    width: 300px; /* Largura da caixa */
+    max-width: 90%; /* Para responsividade em telas menores */
+}
+
+/* Estilo para o título de cadastro */
+.titulocadastro {
+    text-align: center;
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+/* Estilo para labels */
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Estilo para inputs */
+input {
+    width: 100%; /* Garante que os inputs ocupem toda a largura do container */
+    padding: 10px; /* Aumenta o padding para mais conforto */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bordas mais arredondadas */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estilo para botões */
+button {
+    padding: 10px;
+    background-color: #462b10; /* Cor do botão de cadastrar */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Bordas mais arredondadas */
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s; /* Adiciona uma transição suave */
+}
+
+button:hover {
+    background-color: #905f35; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilo para o botão de voltar */
+.back-button {
+    margin-top: 15px;
+    background-color: #462b10; /* Cor do botão de voltar */
+}
+
+.back-button:hover {
+    background-color: #905f35; /* Cor do botão de voltar ao passar o mouse */
+}
+
+/* Estilo para mensagens de erro */
+.error {
+    color: white;
+    background-color: red;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 10px; /* Adiciona padding para melhor visualização */
+    border-radius: 5px; /* Bordas arredondadas para a mensagem de erro */
+}
+
+/* Estilo para mensagens de sucesso */
+.success {
+    background-color: green;
+    color: white;
+    padding: 10px; /* Adiciona padding para melhor visualização */
+    border-radius: 5px; /* Bordas arredondadas para a mensagem de sucesso */
+}
+
+/* Estilo para a caixa de mensagem */
+.message-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: opacity 0.5s ease;
+}
+
+/* Animação para a caixa de mensagem */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+/* Estilo para link de 'esqueceu sua senha' */
+a.forgot-password {
+    font-size: 12px; /* Aumenta um pouco o tamanho da fonte */
+    color: #462b10; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+a.forgot-password:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
